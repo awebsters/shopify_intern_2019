@@ -4,10 +4,25 @@ This repo contains my solution to the Shopify Online Marketplace Challenge for t
 
 ## Table of Contents
 
+* [Dependencies](#Dependencies)
 * [API](#API)
     * [All Products Fetch](#All-Products-Fetch)
     * [Single Product Fetch](#Single-Product-Fetch)
     * [Product Purchase](#Purchase-Product)
+
+## Dependencies
+
+This API was built on Ruby version 2.3.1p112 and Ruby on Rails version 5.2.2 and bundled with version 2.0.1. GEM specs can be found [here](Gemfile.lock).
+
+* bootsnap (>= 1.1.0)
+* byebug
+* listen (>= 3.0.5, < 3.2)
+* puma (~> 3.11)
+* rails (~> 5.2.2)
+* spring
+* spring-watcher-listen (~> 2.0.0)
+* sqlite3
+* tzinfo-data
 
 ## API
 
@@ -50,24 +65,3 @@ The API responds with JSON code depending on an HTTP Get request.
 * Test Description: Returned JSON data is the product of :id = 1, but with a subtracted inventory count (inventory_count = 7 - 1 = 6). 
 
 ![image of purchase fetch](images/api_v1_products_1_purchase.PNG)
-
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
